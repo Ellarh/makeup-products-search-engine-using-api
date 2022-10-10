@@ -1,0 +1,21 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+<body>
+    <section id="category">
+            <h1 class="category-heading">Search for your Favorite product by Category</h1>
+            <p class="heading-body">Search for your favorite makeup product by category e.g, powder, liquid etc.</p>
+
+        <form action="{{ url_for('category') }}" method="post" class="needs-validation">
+            <div class="mb-3 input-group-lg">
+                <label></label>
+                <input class="form-control rounded-pill border border-dark" required="required" name="product_name" type="search" placeholder="Enter the product">
+                <br/>
+                <input class="form-control rounded-pill border border-dark" required="required" name="category" type="search" placeholder="Enter the Category" >
+                <div class="buttons">
+                    <button  class="btn btn-secondary btn-lg">SEARCH BY CATEGORY</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>

@@ -1,0 +1,21 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+<body>
+    <section id="tags">
+            <h1 class="heading">Search by Common Tags</h1>
+            <p class="heading-body">Search for your favorite makeup products using tags e.g, vegan, cruelty free, organic</p>
+
+        <form action="{{ url_for('tags') }}" method="post" class="needs-validation">
+            <div class="mb-3 input-group-lg">
+                <label></label>
+                <input class="form-control rounded-pill border border-dark" required="required" name="product_name" type="search" placeholder="Enter the product">
+                <br/>
+                <input class="form-control rounded-pill border border-dark" required="required" name="tag" type="search" placeholder="Enter a filter tag" >
+                <div class="buttons">
+                    <button  class="btn btn-secondary btn-lg">SEARCH TAGS</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>

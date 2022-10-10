@@ -1,0 +1,122 @@
+#beginning{
+    padding: 11% 25%;
+    text-align: center;
+    height: 600px;
+    background-image: url('makeup1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.background-image{
+    padding: 16% 30%;
+}
+
+.heading{
+    font-family: 'Cairo', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.heading-body{
+     font-family: 'Cairo', sans-serif;
+     font-size: 20px;
+}
+
+.buttons{
+    padding: 4% 3%;
+}
+
+.btn{
+    color: #fff;
+    background-color: #362222;
+    border-color:  #362222;
+}
+
+/* Search Results page for general */
+#results{
+    padding: 5% 7%;
+}
+
+.results-heading{
+    text-align: left;
+    font-family: 'Cairo', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+hr{
+    border-top: 3px dotted #362222;
+    width: 100%;
+}
+
+.content-title{
+    font-family: 'Roboto', sans-serif;
+    padding: 1% 0;
+}
+
+/* Navbar Section */
+.nav-item{
+    font-family: 'Roboto', sans-serif;
+    padding: 5px  70px;
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    background-color: #FFEDED;
+}
+
+/* Tag Page */
+#tags{
+    padding: 11% 25%;
+    text-align: center;
+    height: 600px;
+    background-image: url('background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+/* Category Page */
+#category{
+    padding: 11% 25%;
+    text-align: center;
+    height: 800px;
+    background-image: url('background2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.category-heading{
+    font-family: 'Cairo', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/* Products */
+#product{
+    padding: 8% 20%;
+    text-align: center;
+    height: 800px;
+    background-image: url('background4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.box-input{
+   : 2% 0;
+}
+
+.image{
+    text-align: center;
+}

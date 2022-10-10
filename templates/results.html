@@ -1,0 +1,52 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+<body>
+<section id="results">
+    <h1 class="results-heading">Search Results</h1>
+    <hr>
+    {% for item in data %}
+    <div class="contents">
+        {% if item %}
+        <div class="row">
+            <div class="col-lg-6 image">
+                <h5>{{ item['name'] }}</h5>
+                <img src="{{ item['image_link'] }}" style="width: 30%;">
+            </div>
+            <div class="col-lg-6">
+                <p class="content-title"><strong>Brand: </strong>{{ item["brand"] }}</p>
+                <p class="content-title"><strong>Name: </strong>{{ item["name"] }}</p>
+                <p class="content-title"><strong>Product Price: </strong>
+                    {% if item["price"] %}
+                    ${{ item["price"].split('.')[0] }}
+                    {% else %}
+                    Not available
+                    {% endif %}
+                </p>
+                <p class="content-title"><strong>Product Description: </strong>{{ item['description'] }}</p>
+                <p class="content-title"><strong>Product Link: </strong><a href="{{ item['product_link'] }}">{{
+                    item["product_link"] }}</a></p>
+                <p class="content-title"><strong>Website Link: </strong><a href="{{ item['website_link'] }}">{{
+                    item["website_link"] }}</a></p>
+                <p class="content-title"><strong>Relevant Tags: </strong>
+                    {% if item["tag_list"] %}
+                    {% for tag in item["tag_list"] %}
+                    {{ tag }},
+                    {% endfor %}
+                    {% else %}
+                    No Tags
+                    {% endif %}
+                </p>
+                <a class="btn btn-dark" href="{{ url_for('home') }}">Home</a>
+                <hr>
+
+            </div>
+            {% else %}
+            <h4>Search not Available</h4>
+        </div>
+        {% endif %}
+         {% endfor %}
+    </div>
+
+</section>
+</body>
